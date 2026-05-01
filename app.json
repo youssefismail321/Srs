@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "CampusCare",
+    "slug": "campuscare",
+    "version": "1.0.0",
+    "scheme": "campuscare",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.campuscare.app",
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CampusCare needs access to your photos.",
+          "cameraPermission": "CampusCare needs access to your camera."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "CampusCare needs access to your camera."
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
