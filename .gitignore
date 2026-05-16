@@ -7,7 +7,6 @@ node_modules/
 .expo/
 dist/
 web-build/
-expo-env.d.ts
 
 # Native
 .kotlin/
@@ -31,11 +30,28 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
+backend/.env
 
 # typescript
 *.tsbuildinfo
 
+# runtime logs
+*.out
+*.err
+expo.out
+expo.err
+
 # generated native folders
 /ios
 /android
+
+# AI-generated files
+CAMPUSCARE_IMPLEMENTATION.md
+*.summary.md
+*_AUDIT*.md
+*_IMPLEMENTATION*.md
+*_GENERATED*.md
+.claude/
+CLAUDE.md
